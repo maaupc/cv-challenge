@@ -1,0 +1,56 @@
+@media(min-width: 992px){
+
+    /* ************************************ NAVBAR STYLE ************************************ */
+    .navbar-brand{
+        font-weight: 500;
+        font-size: 130%;
+    }
+
+    .navbar-brand strong{
+        font-weight: 600;
+    }
+
+
+    /* ************************************ ABOUT STYLE ************************************ */
+    #about{
+    /* height: 80vh; */
+    margin-top: 70px !important;
+    }
+
+    .triangle-left{
+        margin-left: 70px;
+    }
+
+    /* ************************************ EDUCACION STYLE ************************************ */
+    #educacion{
+    /* height: 80vh; */
+    }
+
+    /* ************************************ PORTFOLIO STYLE ************************************ */
+    .card-info{
+        width: 95%;
+    }
+
+    .portfolio1-img{
+        height: 540px;
+        background-image: url("/img/proyecto1-turismo.png");
+    }
+
+    .portfolio2-img{
+        height: 540px;
+        background-image: url("/img/proyecto2-biblioteca.png");
+    }
+
+    .portfolio3-img{
+        height: 540px;
+        background-image: url("/img/proyecto1-turismo.png");
+    }
+
+    /* ************************************ FOOTER STYLE ************************************ */
+
+    #triangle-bottomright {
+        border-left: 1200px solid transparent; 
+      }
+
+
+}

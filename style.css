@@ -1,0 +1,312 @@
+:root{
+    --fondo-principal:linear-gradient(to right top, #fbfa86, #ffd059, #ffa33d, #ff7138, #f52f42);
+    --var1: snow ;
+    --var2:  #404040 ;
+    --var3:  #ef3b3a ;
+    --var4:  #c33434 ;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+      background-color: snow;
+}
+
+
+h4{
+    color: var(--var2);
+    font-weight: bold;
+}
+
+button:hover{
+    text-decoration: none !important;
+}
+
+
+/* ************************************ NAVBAR STYLE ************************************ */
+.bg-light{
+    background-color: snow !important;
+}
+
+.navbar-brand{
+    color: var(--var3) !important;
+    font-weight: 500;
+    font-size: 110%;
+}
+
+.navbar-brand strong{
+    font-weight: 600;
+}
+
+.nav-link{
+    color: var(--var3) !important;
+    font-weight: 500;
+}
+
+.scene {
+    width: 80px;
+    height: 80px;
+    perspective: 240px;
+  }
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.avatar__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.avatar__face--front {
+    border-radius: 80px;    
+}
+  
+.avatar__face--back {
+    transform: rotateY( 180deg );
+    border-radius: 80px;    
+}
+
+.scene:hover .avatar{
+    transform: rotateY(180deg);
+}
+
+.avatar-image{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+.avatar-md-image{
+    object-fit: cover;
+    display: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+.avatar-front{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+
+.avatar-back{
+    object-fit: cover;
+    display: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    transform: rotateY(180deg);
+}
+
+.front-face:hover{
+    transform: rotateY(-180deg);
+}
+.back-face:hover{
+    transform: rotateY(0deg);
+}
+
+/* ************************************ ABOUT STYLE ************************************ */
+#about{
+    padding-top: 80px;
+}
+
+.profile-image{
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 90%;
+    height: 84%;
+
+}
+
+.nombre{
+    font-weight: 500;
+    color: var(--var3);
+}
+
+.nombre strong{
+    font-weight: 600;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 65px solid var(--var3);
+    border-bottom: 150px solid transparent;
+  }
+
+.rectangle{
+    width: 100%;
+    height: 300px;
+    background-color: var(--var3);
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-left: 65px solid var(--var3);
+    border-bottom: 150px solid transparent;
+}
+
+.bg-warning{
+    background-color: var(--var3) !important;
+}
+
+/* ************************************ EDUCACION STYLE ************************************ */
+#educacion{
+    padding-top: 100px;
+}
+
+
+.titulo{
+    color: snow;
+    background-color: var(--var3);
+    font-weight: bold;
+}
+
+
+/* ************************************ PORTFOLIO STYLE ************************************ */
+#portfolio{
+    padding-top: 100px;
+}
+
+.portfolio1-img{
+    height: 546px;
+    background-color: gold;
+    background-image: url("/img/proyecto1-turismo-phone.png");
+    background-size: cover;
+}
+
+.portfolio2-img{
+    height: 546px;
+    background-color: gold;
+    background-image: url("/img/proyecto2-biblioteca-phone.png");
+    background-size: cover;
+}
+
+.portfolio3-img{
+    height: 546px;
+    background-color: gold;
+    background-image: url("/img/proyecto2-biblioteca-phone.png");
+    background-size: cover;
+}
+
+.info-hover{
+    height: 100%;
+    font-size: 100px;
+    color: transparent;
+}
+
+.info-hover:hover{
+    color: white;
+}
+
+
+.card-img-overlay:hover{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6026610473290879) 0%, rgba(50,50,50,0.6054621677772671) 100%); 
+}
+
+.card-info{
+    position: absolute;
+    bottom: 30px;
+    margin-right: 20px
+}
+
+.btn-info{
+    background-color: var(--var3) !important;
+    border-color: transparent !important;
+}
+
+.btn-info:hover{
+    background-color: var(--var4) !important;
+}
+
+.btn-info a{
+    font-weight: normal;
+    color: var(--var1) !important;
+}
+
+.btn-info a:hover{
+    text-decoration: none;
+}
+
+/* ************************************ FOOTER STYLE ************************************ */
+
+
+.footer-section{
+    position: relative;
+    background-color: gainsboro;
+    height: 150px;
+}
+
+.fa{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.fa-arrow-up{
+    bottom: 0;
+    right: 33px;
+}
+
+.linkFooter{
+    color: var(--var3);   
+}
+
+.footer-background{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: gainsboro;
+}
+
+
+#triangle-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid var(--var3);
+    border-left: 350px solid transparent;
+    /* Para tamaño normalito */
+    /* border-left: 950px solid transparent;  */
+  }
+
+.navbar-hambur{
+    position: relative;
+    top: 15px;
+    right: 0px;
+    
+}
+
+.navbar-toggler{
+    background-color: gainsboro;
+}
